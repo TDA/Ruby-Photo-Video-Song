@@ -21,3 +21,5 @@ puts photo
 photo.add_comments("haha, niceee!!")
 puts "Comments:"
 puts photo.comments
+
+puts Photo.ancestors

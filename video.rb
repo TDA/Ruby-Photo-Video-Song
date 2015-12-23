@@ -2,7 +2,6 @@ require './Clip'
 
 class Video < Clip
   attr_writer :resolution
-
   def resolution
     "Height : #{@resolution[:height]}, Width : #{@resolution[:width]}"
   end
@@ -26,3 +25,5 @@ video.add_comments("wow, niceee!!")
 video.add_comments("this is so cooool!!")
 puts "Comments:"
 puts video.comments
+
+puts Video.ancestors

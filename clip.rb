@@ -22,3 +22,5 @@ class Clip
   end
 
 end
+
+# puts Clip.ancestors
