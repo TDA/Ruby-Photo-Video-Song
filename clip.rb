@@ -2,10 +2,10 @@ class Clip
   # superclass for video and song,
   # both need play method so
   attr_accessor :play, :name
-  def initialize(play, name)
+  def initialize(name)
     # using the attr writers
-    play = play
-    name = name
+    self.play = false
+    self.name = name
   end
 
   def playpause

@@ -3,10 +3,9 @@ require './Clip'
 class Song < Clip
   attr_accessor :bitrate
 
-
-  def initialize(play, name, bitrate)
-    super(play, name)
-    bitrate = bitrate
+  def initialize(name, bitrate)
+    super(name)
+    self.bitrate = bitrate
   end
 
   def to_s
@@ -15,7 +14,5 @@ class Song < Clip
 
 end
 
-song = Song.new
-song.bitrate = 128
-song.name = "Manjal Veiyil"
+song = Song.new("Manjal Veiyil", 128)
 puts song
