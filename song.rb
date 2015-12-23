@@ -16,3 +16,9 @@ end
 
 song = Song.new("Manjal Veiyil", 128)
 puts song
+
+
+song.add_comments("superb song!!")
+song.add_comments("this is so melodious!!")
+puts "Comments:"
+puts song.comments

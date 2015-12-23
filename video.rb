@@ -21,3 +21,8 @@ end
 
 video = Video.new("Tamil Padam", height: 720, width: 1280)
 puts video
+
+video.add_comments("wow, niceee!!")
+video.add_comments("this is so cooool!!")
+puts "Comments:"
+puts video.comments
