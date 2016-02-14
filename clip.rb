@@ -4,7 +4,9 @@ class Clip
   # superclass for video and song,
   # both need play method so
   attr_accessor :play, :name
+
   include AddComments
+
   def initialize(name)
     # using the attr writers
     self.play = false
